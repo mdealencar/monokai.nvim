@@ -1,7 +1,7 @@
 # vim-monokai
 
 Fork of [crusoexia/vim-monokai](https://github.com/crusoexia/vim-monokai).
-Add rich golang, rust, lua syntax highlight. (Now only golang available)
+Add rich syntax highlighting, for supported language check [this section](#enhanced-syntax-highlight-support)
 
 **NOTICE:** Please use this colorscheme under GUI mode or in the terminal with true color supported. The colorscheme doesn't support term color.
 
@@ -20,7 +20,7 @@ Add rich golang, rust, lua syntax highlight. (Now only golang available)
 
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
-``` vim
+```vim
 Plug 'keyvchan/vim-monokai'
 ```
 
