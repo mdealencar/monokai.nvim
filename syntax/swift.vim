@@ -1,4 +1,3 @@
-IntelliJ IDEA  
 " Vim syntax file
 " Language:    Swift
 " Maintainer:  Kevin Ballard
