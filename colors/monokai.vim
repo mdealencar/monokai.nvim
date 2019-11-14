@@ -81,6 +81,7 @@ let s:warmgrey    = { "gui": "#75715E", "cterm": "59"  }
 let s:pink        = { "gui": "#F93C80", "cterm": "197" }
 let s:green       = { "gui": "#84F57D", "cterm": "10"  }
 let s:aqua        = { "gui": "#66d9ef", "cterm": "81"  }
+let s:darkaqua        = { "gui": "#4EADE5", "cterm": "81"  }
 let s:yellow      = { "gui": "#FFFF43", "cterm": "226" }
 let s:orange      = { "gui": "#FFBD37", "cterm": "208" }
 let s:deepOrange  = { "gui": "#FF8C00", "cterm": "208" }
@@ -308,8 +309,6 @@ call s:h("cFormat",                  { "fg": s:purple })
 call s:h("cppStructure",                  { "fg": s:pink })
 call s:h("cppStorageClass",                  { "fg": s:pink })
 
-
-
 " go
 call s:h("goStatement",                { "fg": s:pink })
 call s:h("goFunctionCall",             { "fg": s:aqua })
@@ -321,7 +320,7 @@ call s:h("goVarDefs",					{ "fg": s:orange })
 call s:h("rustModPath",        { "fg": s:white})
 call s:h("rustKeyword",        { "fg": s:pink })
 call s:h("rustStorage",		   { "fg": s:pink })
-call s:h("rustMacro",          { "fg": s:aqua })
+call s:h("rustMacro",          { "fg": s:darkaqua })
 call s:h("rustOperator",       { "fg": s:pink })
 call s:h("rustSigil",          { "fg": s:pink })
 
