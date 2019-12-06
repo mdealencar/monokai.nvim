@@ -86,6 +86,7 @@ let s:yellow      = { "gui": "#FFFF43", "cterm": "226" }
 let s:orange      = { "gui": "#FFBD37", "cterm": "208" }
 let s:deepOrange  = { "gui": "#FF8C00", "cterm": "208" }
 let s:purple      = { "gui": "#ae81ff", "cterm": "141" }
+let s:darkpurple      = { "gui": "#855dcf", "cterm": "141" }
 let s:red         = { "gui": "#FF1919", "cterm": "196" }
 let s:darkred     = { "gui": "#F44747", "cterm": "52"  }
 
@@ -308,6 +309,7 @@ call s:h("cFormat",                  { "fg": s:purple })
 " cpp
 call s:h("cppStructure",                  { "fg": s:pink })
 call s:h("cppStorageClass",                  { "fg": s:pink })
+call s:h("cppSTLnamespace",                  { "fg": s:darkpurple })
 
 " go
 call s:h("goStatement",                { "fg": s:pink })
