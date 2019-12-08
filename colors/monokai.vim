@@ -310,6 +310,8 @@ call s:h("cFormat",                  { "fg": s:purple })
 call s:h("cppStructure",                  { "fg": s:pink })
 call s:h("cppStorageClass",                  { "fg": s:pink })
 call s:h("cppSTLnamespace",                  { "fg": s:darkpurple })
+call s:h("cppSTLVariable",                  { "fg": s:orange })
+call s:h("cppSTLtype",                  { "fg": s:green })
 
 " go
 call s:h("goStatement",                { "fg": s:pink })
