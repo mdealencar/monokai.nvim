@@ -52,17 +52,17 @@ hi def link cAnsiName Identifier
 
 
 " Operators
-" syn match cOperator "\(<<\|>>\|[-+*/%&^|<>!=]\)="
-" syn match cOperator "<<\|>>\|&&\|||\|++\|--\|->"
-" syn match cOperator "[.!~*&%<>^|=,+-]"
-" syn match cOperator "/[^/*=]"me=e-1
-" syn match cOperator "/$"
-" syn match cOperator "&&\|||"
-" syn match cOperator "[][]"
+syn match cOperator "\(<<\|>>\|[-+*/%&^|<>!=]\)="
+syn match cOperator "<<\|>>\|&&\|||\|++\|--\|->"
+syn match cOperator "[.!~*&%<>^|=,+-]"
+syn match cOperator "/[^/*=]"me=e-1
+syn match cOperator "/$"
+syn match cOperator "&&\|||"
+syn match cOperator "[][]"
 
 " Preprocessor
-" syn keyword cDefined defined contained containedin=cDefine
-" hi def link cDefined cDefine
+syn keyword cDefined defined contained containedin=cDefine
+hi def link cDefined cDefine
 
 " Delimiters
 " syn match cDelimiter "[();\\]"
