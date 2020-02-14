@@ -217,6 +217,8 @@ call s:h("vimCommand",              { "fg": s:pink })
 " Javascript
 call s:h("javaScriptIdentifier",{ "fg": s:pink })
 call s:h("javaScriptFuncName",  { "fg": s:green })
+call s:h("javaScriptFunction",  { "fg": s:pink })
+call s:h("javaScriptBraces",  { "fg": s:white })
 call s:h("javaScriptType",  { "fg": s:pink })
 call s:h("javaScriptCommentTodo", {"fg": s:orange})
 
@@ -331,4 +333,7 @@ call s:h("rustSigil",          { "fg": s:pink })
 " toml
 call s:h("tomlKey",          { "fg": s:pink })
 call s:h("tomlTable",          { "fg": s:green })
+
+" swift
+call s:h("swiftFuncDef",          { "fg": s:aqua })
 
