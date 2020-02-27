@@ -77,4 +77,4 @@ let g:monokai_gui_italic = 1
 - [fatih/vim-go](https://github.com/fatih/vim-go): Syntax file for go.
 - [bfrg/vim-cpp-modern](https://github.com/bfrg/vim-cpp-modern): Syntax file for C and C++.
 - [cespare/vim-toml](https://github.com/cespare/vim-toml): Syntax file for toml also with filetype detection.
-- [lilyball/vim-swift](https://github.com/lilyball/vim-swift): Syntax file for swift also with filetype detection.
+- [keith/swift.vim](https://github.com/keith/swift.vim): Syntax file for swift also with filetype detection.
