@@ -305,18 +305,18 @@ call s:h("erubyRailsMethod",            { "fg": s:aqua })
 
 " c
 call s:h("cLabel",                      { "fg": s:pink })
-call s:h("cType",						{ "fg": s:pink })
-call s:h("cStructure",                  { "fg": s:pink })
-call s:h("cStorageClass",               { "fg": s:pink })
-call s:h("cInclude",                    { "fg": s:pink })
-call s:h("cDefine",                     { "fg": s:pink })
+call s:h("cType",						{ "fg": s:pink , "format": "bold"})
+call s:h("cStructure",                  { "fg": s:pink , "format": "bold"})
+call s:h("cStorageClass",               { "fg": s:pink , "format": "bold"})
+call s:h("cInclude",                    { "fg": s:pink ,"format":"bold"})
+call s:h("cDefine",                     { "fg": s:pink ,"format":"bold"})
 call s:h("cfunctions",                  { "fg": s:aqua })
-call s:h("cFormat",                  { "fg": s:purple })
+call s:h("cFormat",						{ "fg": s:purple })
 
 
 " cpp
-call s:h("cppStructure",                  { "fg": s:pink })
-call s:h("cppStorageClass",                  { "fg": s:pink })
+call s:h("cppStructure",                  { "fg": s:pink ,"format": "bold"})
+call s:h("cppStorageClass",                  { "fg": s:pink ,"format": "bold"})
 call s:h("cppSTLnamespace",                  { "fg": s:darkpurple })
 call s:h("cppSTLVariable",                  { "fg": s:orange })
 call s:h("cppSTLtype",                  { "fg": s:green })
