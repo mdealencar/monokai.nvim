@@ -154,7 +154,7 @@ call s:h("Boolean",       { "fg": s:purple })
 call s:h("Character",     { "fg": s:yellow })
 call s:h("String",        { "fg": s:yellow })
 
-call s:h("Type",          { "fg": s:pink })
+call s:h("Type",          { "fg": s:pink , "format": "bold"})
 call s:h("Structure",     { "fg": s:aqua })
 call s:h("StorageClass",  { "fg": s:aqua })
 call s:h("Typedef",       { "fg": s:aqua })
@@ -170,8 +170,8 @@ call s:h("Label",         { "fg": s:pink })
 call s:h("Keyword",       { "fg": s:pink , "format": "bold"})
 
 call s:h("PreProc",       { "fg": s:green })
-call s:h("Include",       { "fg": s:pink })
-call s:h("Define",        { "fg": s:pink })
+call s:h("Include",       { "fg": s:pink , "format": "bold"})
+call s:h("Define",        { "fg": s:pink , "format": "bold"})
 call s:h("Macro",         { "fg": s:green })
 call s:h("PreCondit",     { "fg": s:green })
 
@@ -221,11 +221,11 @@ call s:h("jpropertiesIdentifier",   { "fg": s:pink })
 call s:h("vimCommand",              { "fg": s:pink })
 
 " Javascript
-call s:h("javaScriptIdentifier",{ "fg": s:pink })
+call s:h("javaScriptIdentifier",{ "fg": s:pink , "format":"bold"})
 call s:h("javaScriptFuncName",  { "fg": s:green })
-call s:h("javaScriptFunction",  { "fg": s:pink })
+call s:h("javaScriptFunction",  { "fg": s:pink ,"format":"bold"})
 call s:h("javaScriptBraces",  { "fg": s:white })
-call s:h("javaScriptType",  { "fg": s:pink })
+call s:h("javaScriptType",  { "fg": s:pink,"format":"bold" })
 call s:h("javaScriptCommentTodo", {"fg": s:orange})
 
 " Typescript
