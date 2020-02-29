@@ -141,7 +141,7 @@ call s:h("FoldColumn",    {                     "bg": s:darkblack								})
 
 " popup menu
 call s:h("Pmenu",         { "fg": s:white, 									})
-call s:h("PmenuSel",      { "fg": s:darkgrey,              "format": "reverse,bold"  })
+call s:h("PmenuSel",      { "fg": s:grey,              "bg":s:black,"format": "reverse,bold"  })
 call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 
 " Generic Syntax Highlighting
