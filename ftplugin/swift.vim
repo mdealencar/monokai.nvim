@@ -23,7 +23,7 @@ silent! setlocal formatoptions+=j
 
 " cc=+1 is common, but showing it for the comment width kind of sucks.
 " Let's pick 120 characters instead, that's a good length.
-setlocal colorcolumn=121
+" setlocal colorcolumn=121
 
 setlocal suffixesadd=.swift
 
