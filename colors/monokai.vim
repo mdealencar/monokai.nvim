@@ -344,5 +344,5 @@ call s:h("tomlTable",          { "fg": s:green })
 call s:h("swiftFuncDef",          { "fg": s:aqua })
 
 " python 
-call s:h("pythonFunction",          { "fg": s:aqua })
+call s:h("pythonFunction",          { "fg": s:green })
 
