@@ -3,7 +3,7 @@
 Fork of [crusoexia/vim-monokai](https://github.com/crusoexia/vim-monokai).
 Add rich syntax highlighting, for supported language check [this section](#enhanced-syntax-highlight-support)
 
-**NOTICE:** Please use this colorscheme under GUI mode or in the terminal with true color supported. The colorscheme doesn't support term color.
+**NOTICE:** Please use this colorscheme under GUI mode or in the terminal with true color supported. The colorscheme doesn't support term color. I'm currently working on adding support for [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter), please see the `treesitter` branch.
 
 - [vim-monokai](#vim-monokai)
   - [Install](#install)
