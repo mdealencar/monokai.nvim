@@ -24,7 +24,7 @@
  let g:monokai_termcolors = 256 " does not support 16 color term right now.
  
  set background=dark
- hi clear
+ " hi clear
  
  if exists("syntax_on")
  	syntax reset
@@ -146,7 +146,7 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 " 
 " " Generic Syntax Highlighting
 " " ---------------------------
-" 
+
  call s:h("Constant",      { "fg": s:purple })
  call s:h("Number",        { "fg": s:purple })
  call s:h("Float",         { "fg": s:purple })
@@ -183,12 +183,67 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
  
  call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
  call s:h("Comment",       { "fg": s:grey, "format": "italic" })
- 
+"  
  call s:h("Underlined",    { "fg": s:green, "gui": "underline"})
  call s:h("Ignore",        {})
  call s:h("Error",         { "fg": s:white, "bg": s:darkred })
- 
+  
  call s:h("spellBad",    { "guisp": "#fcaf3e" })
  call s:h("spellCap",        {"guisp": "#73d216"})
  call s:h("spellRare",         { "guisp": "#ad7fa8" })
  call s:h("spellLocal",         { "guisp": "#729fcf" })
+ 
+
+ call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua })
+ call s:h("LspDiagnosticsDefaultError",        {"fg": s:red })
+ call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow })
+
+" TreeSitter stuff
+call s:h("TSAnnotation",		{"fg": s:pink })
+call s:h("TSAttribute",		{"fg": s:pink })
+call s:h("TSBoolean",		{"fg": s:purple })
+call s:h("TSCharacter",		{"fg": s:yellow })
+call s:h("TSComment",		{"fg": s:grey })
+call s:h("TSConstructor",		{"fg": s:pink })
+call s:h("TSConditional",		{"fg": s:pink })
+call s:h("TSConstant",		{"fg": s:green })
+call s:h("TSConstBuiltin",		{"fg": s:green })
+call s:h("TSConstMacro",		{"fg": s:green })
+call s:h("TSError",		{"fg": s:pink })
+call s:h("TSException",		{"fg": s:pink })
+call s:h("TSField",		{"fg": s:pink })
+call s:h("TSFloat",		{"fg": s:pink })
+call s:h("TSFunction",		{"fg": s:aqua })
+call s:h("TSFuncBuiltin",		{"fg": s:darkaqua })
+call s:h("TSFuncMacro",		{"fg": s:green })
+call s:h("TSInclude",		{"fg": s:pink, 'format': 'bold' })
+call s:h("TSKeyword",		{"fg": s:pink })
+call s:h("TSKeywordFunction",		{"fg": s:aqua })
+call s:h("TSLabel",		{"fg": s:pink })
+call s:h("TSMethod",		{"fg": s:green })
+call s:h("TSNamespace",		{"fg": s:pink })
+call s:h("TSNone",		{"fg": s:pink })
+call s:h("TSNumber",		{"fg": s:purple })
+call s:h("TSOperator",		{"fg": s:pink })
+call s:h("TSParameter",		{"fg": s:white })
+call s:h("TSParameterReference",		{"fg": s:pink })
+call s:h("TSProperty",		{"fg": s:pink })
+call s:h("TSPunctDelimiter",		{"fg": s:white })
+call s:h("TSPunctBracket",		{"fg": s:white })
+call s:h("TSPunctSpecial",		{"fg": s:pink })
+call s:h("TSRepeat",		{"fg": s:pink })
+call s:h("TSstring",		{"fg": s:yellow })
+call s:h("TSstringRegex",		{"fg": s:pink })
+call s:h("TSstringEscape",		{"fg": s:pink })
+call s:h("TSTag",		{"fg": s:pink })
+call s:h("TSTagDelimiter",		{"fg": s:pink })
+call s:h("TSNext",		{"fg": s:pink })
+call s:h("TSEmphasis",		{"fg": s:pink })
+call s:h("TSUnderline",		{"fg": s:pink })
+call s:h("TSTitle",		{"fg": s:pink })
+call s:h("TSURL",		{"fg": s:pink })
+call s:h("TSType",		{"fg": s:pink })
+call s:h("TSTypeBuiltin",		{"fg": s:pink })
+call s:h("TSVariable",		{"fg": s:orange })
+call s:h("TSVariableBuiltin",		{"fg": s:darkaqua })
+
