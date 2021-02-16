@@ -6,29 +6,29 @@
 " " The colour palette is from http://www.colourlovers.com/
 " " The original code is from https://github.com/w0ng/vim-hybrid
 " 
- " Initialisation
- " --------------
- 
- if !has("gui_running") && &t_Co < 256
- 	finish
- endif
- 
- if ! exists("g:monokai_gui_italic")
- 	let g:monokai_gui_italic = 1
- endif
- 
- if ! exists("g:monokai_term_italic")
- 	let g:monokai_term_italic = 0
- endif
- 
- let g:monokai_termcolors = 256 " does not support 16 color term right now.
- 
- set background=dark
- " hi clear
- 
- if exists("syntax_on")
- 	syntax reset
- endif
+" Initialisation
+" --------------
+
+if !has("gui_running") && &t_Co < 256
+	finish
+endif
+
+if ! exists("g:monokai_gui_italic")
+	let g:monokai_gui_italic = 1
+endif
+
+if ! exists("g:monokai_term_italic")
+	let g:monokai_term_italic = 0
+endif
+
+let g:monokai_termcolors = 256 " does not support 16 color term right now.
+
+set background=dark
+" hi clear
+
+if exists("syntax_on")
+	syntax reset
+endif
 " 
 let colors_name = "monokai"
 " 
@@ -121,12 +121,12 @@ call s:h("VertSplit",     { "fg": s:darkgrey   					})
 call s:h("LineNr",        { "fg": s:yellow,														})
 call s:h("CursorLineNr",  { "fg": s:yellow,														})
 call s:h("SignColumn",    {                     								})
-call s:h("NvimInternalError",{"fg":s:white, "bg":s:red											})
+call s:h("NvimInternalError",{"fg":s:white											})
 
 " misc
 call s:h("SpecialKey",    { "fg": s:pink														})
 call s:h("Title",         { "fg": s:yellow														})
-call s:h("Directory",     { "fg": s:aqua														})
+call s:h("Directory",     { "fg": s:white											})
 
 " diff
 call s:h("DiffAdd",       { "fg": s:addfg,      "bg": s:addbg									})
@@ -147,51 +147,51 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 " " Generic Syntax Highlighting
 " " ---------------------------
 
- call s:h("Constant",      { "fg": s:purple })
- call s:h("Number",        { "fg": s:purple })
- call s:h("Float",         { "fg": s:purple })
- call s:h("Boolean",       { "fg": s:purple })
- call s:h("Character",     { "fg": s:yellow })
- call s:h("String",        { "fg": s:yellow })
- 
- call s:h("Type",          { "fg": s:pink , "format": "bold"})
- call s:h("Structure",     { "fg": s:aqua })
- call s:h("StorageClass",  { "fg": s:aqua })
- call s:h("Typedef",       { "fg": s:aqua })
- call s:h("Function",      { "fg": s:aqua })
- 
- 
- call s:h("Identifier",    { "fg": s:green })
- 
- call s:h("Statement",     { "fg": s:pink })
- call s:h("Operator",      { "fg": s:pink })
- call s:h("Label",         { "fg": s:pink })
- 
- call s:h("Keyword",       { "fg": s:pink , "format": "bold"})
- 
- call s:h("PreProc",       { "fg": s:green })
- call s:h("Include",       { "fg": s:pink , "format": "bold"})
- call s:h("Define",        { "fg": s:pink , "format": "bold"})
- call s:h("Macro",         { "fg": s:green })
- call s:h("PreCondit",     { "fg": s:green })
- 
- call s:h("Special",       { "fg": s:purple })
- call s:h("SpecialChar",   { "fg": s:pink })
- call s:h("Delimiter",     { "fg": s:white })
- call s:h("SpecialComment",{ "fg": s:aqua })
- call s:h("Tag",           { "fg": s:pink })
- 
- call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
- call s:h("Comment",       { "fg": s:grey, "format": "italic" })
-"  
- call s:h("Underlined",    { "fg": s:green, "gui": "underline"})
- call s:h("Ignore",        {})
- call s:h("Error",         { "fg": s:white, "bg": s:darkred })
-  
- call s:h("spellBad",    { "guisp": "#fcaf3e" })
- call s:h("spellCap",        {"guisp": "#73d216"})
- call s:h("spellRare",         { "guisp": "#ad7fa8" })
- call s:h("spellLocal",         { "guisp": "#729fcf" })
+ " call s:h("Constant",      { "fg": s:purple })
+ " call s:h("Number",        { "fg": s:purple })
+ " call s:h("Float",         { "fg": s:purple })
+ " call s:h("Boolean",       { "fg": s:purple })
+ " call s:h("Character",     { "fg": s:yellow })
+ " call s:h("String",        { "fg": s:yellow })
+ " 
+ " call s:h("Type",          { "fg": s:pink , "format": "bold"})
+ " call s:h("Structure",     { "fg": s:aqua })
+ " call s:h("StorageClass",  { "fg": s:aqua })
+ " call s:h("Typedef",       { "fg": s:aqua })
+ " call s:h("Function",      { "fg": s:aqua })
+ " 
+ " 
+ " call s:h("Identifier",    { "fg": s:green })
+ " 
+ " call s:h("Statement",     { "fg": s:pink })
+ " call s:h("Operator",      { "fg": s:pink })
+ " call s:h("Label",         { "fg": s:pink })
+ " 
+ " call s:h("Keyword",       { "fg": s:pink , "format": "bold"})
+ " 
+ " call s:h("PreProc",       { "fg": s:green })
+ " call s:h("Include",       { "fg": s:pink , "format": "bold"})
+ " call s:h("Define",        { "fg": s:pink , "format": "bold"})
+ " call s:h("Macro",         { "fg": s:green })
+ " call s:h("PreCondit",     { "fg": s:green })
+ " 
+ " call s:h("Special",       { "fg": s:purple })
+ " call s:h("SpecialChar",   { "fg": s:pink })
+ " call s:h("Delimiter",     { "fg": s:white })
+ " call s:h("SpecialComment",{ "fg": s:aqua })
+ " call s:h("Tag",           { "fg": s:pink })
+ " 
+ " call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
+call s:h("Comment",       { "fg": s:grey, "format": "italic" })
+""   
+ " call s:h("Underlined",    { "fg": s:green, "gui": "underline"})
+ " call s:h("Ignore",        {})
+ " call s:h("Error",         { "fg": s:white})
+ "  
+ " call s:h("spellBad",    { "guisp": "#fcaf3e" })
+ " call s:h("spellCap",        {"guisp": "#73d216"})
+ " call s:h("spellRare",         { "guisp": "#ad7fa8" })
+ " call s:h("spellLocal",         { "guisp": "#729fcf" })
  
 
  call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua })
@@ -199,51 +199,52 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
  call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow })
 
 " TreeSitter stuff
-call s:h("TSAnnotation",		{"fg": s:pink })
-call s:h("TSAttribute",		{"fg": s:pink })
-call s:h("TSBoolean",		{"fg": s:purple })
+call s:h("TSAnnotation", {"fg": s:pink})
+call s:h("TSAttribute",	{"fg": s:green})
+call s:h("TSBoolean",	{"fg": s:purple})
 call s:h("TSCharacter",		{"fg": s:yellow })
-call s:h("TSComment",		{"fg": s:grey })
-call s:h("TSConstructor",		{"fg": s:pink })
+call s:h("TSComment",       { "fg": s:grey, "format": "italic" })
+call s:h("TSConstructor",		{"fg": s:green })
 call s:h("TSConditional",		{"fg": s:pink })
 call s:h("TSConstant",		{"fg": s:green })
-call s:h("TSConstBuiltin",		{"fg": s:green })
+call s:h("TSConstBuiltin",		{"fg": s:darkpurple })
 call s:h("TSConstMacro",		{"fg": s:green })
 call s:h("TSError",		{"fg": s:pink })
 call s:h("TSException",		{"fg": s:pink })
-call s:h("TSField",		{"fg": s:pink })
-call s:h("TSFloat",		{"fg": s:pink })
+call s:h("TSField",		{"fg": s:white })
+call s:h("TSFloat",		{"fg": s:purple })
 call s:h("TSFunction",		{"fg": s:aqua })
 call s:h("TSFuncBuiltin",		{"fg": s:darkaqua })
 call s:h("TSFuncMacro",		{"fg": s:green })
-call s:h("TSInclude",		{"fg": s:pink, 'format': 'bold' })
-call s:h("TSKeyword",		{"fg": s:pink })
+call s:h("TSInclude",		{"fg": s:pink, 'format': 'bold'})
+call s:h("TSKeyword",	{"fg": s:pink, 'format': 'bold'})
 call s:h("TSKeywordFunction",		{"fg": s:aqua })
 call s:h("TSLabel",		{"fg": s:pink })
-call s:h("TSMethod",		{"fg": s:green })
+call s:h("TSMethod",		{"fg": s:aqua })
 call s:h("TSNamespace",		{"fg": s:pink })
 call s:h("TSNone",		{"fg": s:pink })
 call s:h("TSNumber",		{"fg": s:purple })
 call s:h("TSOperator",		{"fg": s:pink })
 call s:h("TSParameter",		{"fg": s:white })
 call s:h("TSParameterReference",		{"fg": s:pink })
-call s:h("TSProperty",		{"fg": s:pink })
+call s:h("TSProperty",		{"fg": s:green })
 call s:h("TSPunctDelimiter",		{"fg": s:white })
 call s:h("TSPunctBracket",		{"fg": s:white })
-call s:h("TSPunctSpecial",		{"fg": s:pink })
+call s:h("TSPunctSpecial",		{"fg": s:white })
 call s:h("TSRepeat",		{"fg": s:pink })
 call s:h("TSstring",		{"fg": s:yellow })
 call s:h("TSstringRegex",		{"fg": s:pink })
-call s:h("TSstringEscape",		{"fg": s:pink })
+call s:h("TSstringEscape",		{"fg": s:purple })
 call s:h("TSTag",		{"fg": s:pink })
 call s:h("TSTagDelimiter",		{"fg": s:pink })
 call s:h("TSNext",		{"fg": s:pink })
 call s:h("TSEmphasis",		{"fg": s:pink })
 call s:h("TSUnderline",		{"fg": s:pink })
+call s:h("TSStrike",		{"fg": s:pink })
 call s:h("TSTitle",		{"fg": s:pink })
 call s:h("TSURL",		{"fg": s:pink })
 call s:h("TSType",		{"fg": s:pink })
-call s:h("TSTypeBuiltin",		{"fg": s:pink })
+call s:h("TSTypeBuiltin",		{"fg": s:darkpurple })
 call s:h("TSVariable",		{"fg": s:orange })
 call s:h("TSVariableBuiltin",		{"fg": s:darkaqua })
 
