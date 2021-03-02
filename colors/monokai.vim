@@ -147,41 +147,41 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 " " Generic Syntax Highlighting
 " " ---------------------------
 
- " call s:h("Constant",      { "fg": s:purple })
- " call s:h("Number",        { "fg": s:purple })
- " call s:h("Float",         { "fg": s:purple })
- " call s:h("Boolean",       { "fg": s:purple })
- " call s:h("Character",     { "fg": s:yellow })
- " call s:h("String",        { "fg": s:yellow })
- " 
- " call s:h("Type",          { "fg": s:pink , "format": "bold"})
- " call s:h("Structure",     { "fg": s:aqua })
- " call s:h("StorageClass",  { "fg": s:aqua })
- " call s:h("Typedef",       { "fg": s:aqua })
- " call s:h("Function",      { "fg": s:aqua })
- " 
- " 
- " call s:h("Identifier",    { "fg": s:green })
- " 
- " call s:h("Statement",     { "fg": s:pink })
- " call s:h("Operator",      { "fg": s:pink })
- " call s:h("Label",         { "fg": s:pink })
- " 
- " call s:h("Keyword",       { "fg": s:pink , "format": "bold"})
- " 
- " call s:h("PreProc",       { "fg": s:green })
- " call s:h("Include",       { "fg": s:pink , "format": "bold"})
- " call s:h("Define",        { "fg": s:pink , "format": "bold"})
- " call s:h("Macro",         { "fg": s:green })
- " call s:h("PreCondit",     { "fg": s:green })
- " 
- " call s:h("Special",       { "fg": s:purple })
- " call s:h("SpecialChar",   { "fg": s:pink })
- " call s:h("Delimiter",     { "fg": s:white })
- " call s:h("SpecialComment",{ "fg": s:aqua })
- " call s:h("Tag",           { "fg": s:pink })
- " 
- " call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
+call s:h("Constant",      { "fg": s:purple })
+call s:h("Number",        { "fg": s:purple })
+call s:h("Float",         { "fg": s:purple })
+call s:h("Boolean",       { "fg": s:purple })
+call s:h("Character",     { "fg": s:yellow })
+call s:h("String",        { "fg": s:yellow })
+
+call s:h("Type",          { "fg": s:pink , "format": "bold"})
+call s:h("Structure",     { "fg": s:aqua })
+call s:h("StorageClass",  { "fg": s:aqua })
+call s:h("Typedef",       { "fg": s:aqua })
+call s:h("Function",      { "fg": s:aqua })
+
+
+call s:h("Identifier",    { "fg": s:green })
+
+call s:h("Statement",     { "fg": s:pink })
+call s:h("Operator",      { "fg": s:pink })
+call s:h("Label",         { "fg": s:pink })
+
+call s:h("Keyword",       { "fg": s:pink , "format": "bold"})
+
+call s:h("PreProc",       { "fg": s:green })
+call s:h("Include",       { "fg": s:pink , "format": "bold"})
+call s:h("Define",        { "fg": s:pink , "format": "bold"})
+call s:h("Macro",         { "fg": s:green })
+call s:h("PreCondit",     { "fg": s:green })
+
+call s:h("Special",       { "fg": s:purple })
+call s:h("SpecialChar",   { "fg": s:pink })
+call s:h("Delimiter",     { "fg": s:white })
+call s:h("SpecialComment",{ "fg": s:aqua })
+call s:h("Tag",           { "fg": s:pink })
+
+call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
 call s:h("Comment",       { "fg": s:grey, "format": "italic" })
 ""   
  " call s:h("Underlined",    { "fg": s:green, "gui": "underline"})
