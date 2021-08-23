@@ -9,22 +9,8 @@
 " Initialisation
 " --------------
 
-if !has("gui_running") && &t_Co < 256
-	finish
-endif
-
-if ! exists("g:monokai_gui_italic")
-	let g:monokai_gui_italic = 1
-endif
-
-if ! exists("g:monokai_term_italic")
-	let g:monokai_term_italic = 0
-endif
-
-let g:monokai_termcolors = 256 " does not support 16 color term right now.
-
 set background=dark
-" hi clear
+hi clear
 
 if exists("syntax_on")
 	syntax reset
@@ -33,37 +19,15 @@ endif
 let colors_name = "monokai"
 " 
 function! s:h(group, style)
-	let s:ctermformat = "NONE"
 	let s:guiformat = "NONE"
 	if has_key(a:style, "format")
-		let s:ctermformat = a:style.format
 		let s:guiformat = a:style.format
 	endif
-	if g:monokai_term_italic == 0
-		let s:ctermformat = substitute(s:ctermformat, ",italic", "", "")
-		let s:ctermformat = substitute(s:ctermformat, "italic,", "", "")
-		let s:ctermformat = substitute(s:ctermformat, "italic", "", "")
-	endif
-	if g:monokai_gui_italic == 0
-		let s:guiformat = substitute(s:guiformat, ",italic", "", "")
-		let s:guiformat = substitute(s:guiformat, "italic,", "", "")
-		let s:guiformat = substitute(s:guiformat, "italic", "", "")
-	endif
-	if g:monokai_termcolors == 16
-		let l:ctermfg = (has_key(a:style, "fg") ? a:style.fg.cterm16 : "NONE")
-		let l:ctermbg = (has_key(a:style, "bg") ? a:style.bg.cterm16 : "NONE")
-	else
-		let l:ctermfg = (has_key(a:style, "fg") ? a:style.fg.cterm : "NONE")
-		let l:ctermbg = (has_key(a:style, "bg") ? a:style.bg.cterm : "NONE")
-	end
 	execute "highlight" a:group
 				\ "guifg="   (has_key(a:style, "fg")      ? a:style.fg.gui   : "NONE")
 				\ "guibg="   (has_key(a:style, "bg")      ? a:style.bg.gui   : "NONE")
 				\ "guisp="   (has_key(a:style, "sp")      ? a:style.sp.gui   : "NONE")
 				\ "gui="     (!empty(s:guiformat) ? s:guiformat   : "NONE")
-				\ "ctermfg=" . l:ctermfg
-				\ "ctermbg=" . l:ctermbg
-				\ "cterm="   (!empty(s:ctermformat) ? s:ctermformat   : "NONE")
 endfunction
 " 
  " Palettes
@@ -194,9 +158,9 @@ call s:h("Comment",       { "fg": s:grey, "format": "italic" })
  " call s:h("spellLocal",         { "guisp": "#729fcf" })
  
 
- call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua })
- call s:h("LspDiagnosticsDefaultError",        {"fg": s:red })
- call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow })
+call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua })
+call s:h("LspDiagnosticsDefaultError",        {"fg": s:red })
+call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow })
 
 " TreeSitter stuff
 call s:h("TSAnnotation", {"fg": s:pink})
