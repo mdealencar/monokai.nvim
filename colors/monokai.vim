@@ -147,20 +147,10 @@ call s:h("Tag",           { "fg": s:pink })
 
 call s:h("Todo",          { "fg": s:deepOrange,   "format": "bold,italic" })
 call s:h("Comment",       { "fg": s:grey, "format": "italic" })
-""   
- " call s:h("Underlined",    { "fg": s:green, "gui": "underline"})
- " call s:h("Ignore",        {})
- " call s:h("Error",         { "fg": s:white})
- "  
- " call s:h("spellBad",    { "guisp": "#fcaf3e" })
- " call s:h("spellCap",        {"guisp": "#73d216"})
- " call s:h("spellRare",         { "guisp": "#ad7fa8" })
- " call s:h("spellLocal",         { "guisp": "#729fcf" })
- 
 
-call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua })
-call s:h("LspDiagnosticsDefaultError",        {"fg": s:red })
-call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow })
+call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua , "format":"undercurl"})
+call s:h("LspDiagnosticsDefaultError",        {"fg": s:red , "format":"undercurl"})
+call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow , "format":"undercurl"})
 
 " TreeSitter stuff
 call s:h("TSAnnotation", {"fg": s:pink})
