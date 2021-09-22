@@ -151,6 +151,10 @@ call s:h("Comment",       { "fg": s:grey, "format": "italic" })
 call s:h("LspDiagnosticsDefaultHint",    { "fg": s:aqua , "format":"undercurl"})
 call s:h("LspDiagnosticsDefaultError",        {"fg": s:red , "format":"undercurl"})
 call s:h("LspDiagnosticsDefaultWarning",         { "fg": s:yellow , "format":"undercurl"})
+call s:h("DiagnosticUnderlineError", {"format":"undercurl"})
+call s:h("DiagnosticUnderlineWarn", {"format":"undercurl"} )
+call s:h("DiagnosticUnderlineInfo", {"format":"undercurl"} )
+call s:h("DiagnosticUnderlineHint", {"format":"undercurl"} )
 
 " TreeSitter stuff
 call s:h("TSAnnotation", {"fg": s:pink})
