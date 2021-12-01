@@ -109,6 +109,8 @@ call s:h("Pmenu",         { "fg": s:white, 									})
 call s:h("PmenuSel",      { "fg": s:grey,              "bg":s:black,"format": "reverse,bold"  })
 call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 
+call s:h("Conceal",    { "fg": s:lightblack									})
+
 " General highlight
 call s:h("Constant",      { "fg": s:purple })
 call s:h("Number",        { "fg": s:purple })
