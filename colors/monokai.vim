@@ -13,25 +13,25 @@ set background=dark
 hi clear
 
 if exists("syntax_on")
-	syntax reset
+  syntax reset
 endif
 " 
 let colors_name = "monokai"
 " 
 function! s:h(group, style)
-	let s:guiformat = "NONE"
-	if has_key(a:style, "format")
-		let s:guiformat = a:style.format
-	endif
-	execute "highlight" a:group
-				\ "guifg="   (has_key(a:style, "fg")      ? a:style.fg.gui   : "NONE")
-				\ "guibg="   (has_key(a:style, "bg")      ? a:style.bg.gui   : "NONE")
-				\ "guisp="   (has_key(a:style, "sp")      ? a:style.sp.gui   : "NONE")
-				\ "gui="     (!empty(s:guiformat) ? s:guiformat   : "NONE")
+  let s:guiformat = "NONE"
+  if has_key(a:style, "format")
+    let s:guiformat = a:style.format
+  endif
+  execute "highlight" a:group
+        \ "guifg="   (has_key(a:style, "fg")      ? a:style.fg.gui   : "NONE")
+        \ "guibg="   (has_key(a:style, "bg")      ? a:style.bg.gui   : "NONE")
+        \ "guisp="   (has_key(a:style, "sp")      ? a:style.sp.gui   : "NONE")
+        \ "gui="     (!empty(s:guiformat) ? s:guiformat   : "NONE")
 endfunction
 " 
- " Palettes
- " --------
+" Palettes
+" --------
 let s:white       = { "gui": "#FFFFFF"}
 let s:black       = { "gui": "#272822" }
 let s:lightblack  = { "gui": "#2D2E27" }
@@ -112,6 +112,7 @@ call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:white									})
 call s:h("Conceal",    { "fg": s:lightblack									})
 
 " General highlight
+" Only keep that for lsp preview
 call s:h("Constant",      { "fg": s:purple })
 call s:h("Number",        { "fg": s:purple })
 call s:h("Float",         { "fg": s:purple })
@@ -163,6 +164,7 @@ call s:h("DiagnosticUnderlineInfo", {"format": "undercurl", "sp": s:yellow})
 call s:h("DiagnosticUnderlineHint", {"format": "undercurl", "sp": s:aqua})
 
 " TreeSitter stuff
+" All builtin stuff should be bold and italic
 call s:h("TSAttribute",	{"fg": s:green})
 call s:h("TSBoolean",	{"fg": s:darkpurple, "format": "bold"})
 call s:h("TSCharacter",		{"fg": s:yellow })
@@ -183,6 +185,7 @@ call s:h("TSInclude",		{"fg": s:pink, 'format': 'bold'})
 call s:h("TSKeyword",	{"fg": s:pink, 'format': 'bold'})
 call s:h("TSKeywordFunction",		{"fg": s:pink })
 call s:h("TSKeywordOperation",		{"fg": s:pink })
+call s:h("TSKeywordReturn",		{"fg": s:pink })
 call s:h("TSLabel",		{"fg": s:pink })
 call s:h("TSMethod",		{"fg": s:aqua })
 call s:h("TSNamespace",		{"fg": s:pink })
@@ -204,13 +207,13 @@ call s:h("TSSymbol",		{"fg": s:pink })
 call s:h("TSTag",		{"fg": s:pink })
 call s:h("TSTagAttribute",		{"fg": s:pink })
 call s:h("TSTagDelimiter",		{"fg": s:pink })
-call s:h("TSNext",		{"fg": s:pink })
+call s:h("TSText",		{"fg": s:pink })
 call s:h("TSStrong",		{"fg": s:pink })
 call s:h("TSEmphasis",		{"fg": s:pink })
 call s:h("TSUnderline",		{"fg": s:pink })
 call s:h("TSStrike",		{"fg": s:pink })
 call s:h("TSTitle",		{"fg": s:pink })
-call s:h("TSLiteral",		{"fg": s:pink })
+call s:h("TSLiteral",		{"fg": s:yellow }) 
 call s:h("TSURL",		{"fg": s:white })
 call s:h("TSMath",		{"fg": s:pink })
 call s:h("TSTextReference",		{"fg": s:pink })
