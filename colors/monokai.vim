@@ -152,10 +152,10 @@ call s:h("Comment",       { "fg": s:grey, "format": "italic" })
 
 
 " lsp diagnostic stuff
-call s:h("DiagnosticsHint",    { "fg": s:aqua })
-call s:h("DiagnosticsError",        {"fg": s:red } )
-call s:h("DiagnosticsWarn",         { "fg": s:orange })
-call s:h("DiagnosticsInfo",         { "fg": s:yellow })
+" call s:h("DiagnosticHint",    { "fg": s:aqua })
+call s:h("DiagnosticError",        {"fg": s:red } )
+call s:h("DiagnosticWarn",         { "fg": s:orange })
+" call s:h("DiagnosticInfo",         { "fg": s:yellow })
 
 
 call s:h("DiagnosticUnderlineError", {"format": "undercurl", "sp": s:red})
