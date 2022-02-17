@@ -1,9 +1,7 @@
 local colors = require("monokai.colors")
 
-local set_namespace = vim.api.nvim__set_hl_ns or vim.api.nvim_set_hl_ns
-local namespace = vim.api.nvim_create_namespace("monokai")
-
-local M = {}
+-- local set_namespace = vim.api.nvim__set_hl_ns or vim.api.nvim_set_hl_ns
+-- local namespace = vim.api.nvim_create_namespace("monokai")
 
 local editor = {
 	Normal = { fg = colors.white },
@@ -184,17 +182,13 @@ local cmp = {
 
 local function highlight(statement)
 	for name, setting in pairs(statement) do
-		vim.api.nvim_set_hl(namespace, name, setting)
+		vim.api.nvim_set_hl(0, name, setting)
 	end
 end
 
-M.do_highlight = function()
-	highlight(editor)
-	highlight(general)
-	highlight(diagnostic)
-	highlight(treesitter)
-	highlight(cmp)
-	set_namespace(namespace)
-end
-
-return M
+highlight(editor)
+highlight(general)
+highlight(diagnostic)
+highlight(treesitter)
+highlight(cmp)
+-- set_namespace(namespace)
