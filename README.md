@@ -10,7 +10,7 @@ Inspired by [monokai pro](https://monokai.pro) and various other monokai-based t
 
 ## Install
 
-### [vim-plug](https://github.com/junegunn/vim-plug)
+### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use("keyvchan/monokai.nvim")
