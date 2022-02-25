@@ -117,7 +117,7 @@ local treesitter = {
 	TSFloat = { fg = colors.purple },
 	TSFunction = { fg = colors.aqua },
 	TSFuncBuiltin = { fg = colors.darkaqua, bold = true, italic = true },
-	TSFuncMacro = { fg = colors.green },
+	TSFuncMacro = { fg = colors.darkaqua, bold = true, italic = true },
 	TSInclude = { fg = colors.pink, bold = true },
 	TSKeyword = { fg = colors.pink, bold = true },
 	TSKeywordFunction = { fg = colors.pink, bold = true },
