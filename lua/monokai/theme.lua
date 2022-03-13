@@ -29,7 +29,6 @@ local editor = {
 	NvimInternalError = { fg = colors.white },
 
 	SpecialKey = { fg = colors.pink },
-	-- Title = { fg = colors.yellow },
 	Directory = { fg = colors.white },
 	--
 	--
@@ -91,10 +90,6 @@ local general = {
 local diagnostic = {
 	DiagnosticError = { fg = colors.red },
 	DiagnosticWarn = { fg = colors.orange },
-	-- DiagnosticUnderlineError = { undercurl = true, guisp = colors.red },
-	-- DiagnosticUnderlineWarn = { undercurl = true, guisp = colors.orange },
-	-- DiagnosticUnderlineInfo = { undercurl = true, guisp = colors.yellow },
-	-- DiagnosticUnderlineHint = { undercurl = true, guisp = colors.aqua },
 	DiagnosticUnderlineError = { undercurl = true, special = colors.red },
 	DiagnosticUnderlineWarn = { undercurl = true, special = colors.orange },
 	DiagnosticUnderlineInfo = { undercurl = true, special = colors.yellow },
