@@ -174,6 +174,9 @@ local cmp = {
 	CmpItemKindUnit = { fg = "#D4D4D4" },
 }
 -- " gray
+local neorg = {
+	NeorgMarkupVerbatim = { fg = colors.orange },
+}
 
 local function highlight(statement)
 	for name, setting in pairs(statement) do
@@ -186,4 +189,5 @@ highlight(general)
 highlight(diagnostic)
 highlight(treesitter)
 highlight(cmp)
+highlight(neorg)
 -- set_namespace(namespace)
