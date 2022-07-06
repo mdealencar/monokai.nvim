@@ -182,6 +182,14 @@ local neorg = {
 	NeorgMarkupVerbatim = { fg = colors.orange },
 }
 
+local telescope = {
+	-- slightly brighter background to make the float pop more
+	FloatBorder = { bg = "NONE", fg = "#5E81AC" },
+	NormalFloat = { bg = "NONE" },
+	TelescopeNormal = { bg = "NONE" },
+	TelescopeBorder = { bg = "NONE" },
+}
+
 local function highlight(statement)
 	for name, setting in pairs(statement) do
 		vim.api.nvim_set_hl(0, name, setting)
@@ -194,4 +202,5 @@ highlight(diagnostic)
 highlight(treesitter)
 highlight(cmp)
 highlight(neorg)
+highlight(telescope)
 -- set_namespace(namespace)
