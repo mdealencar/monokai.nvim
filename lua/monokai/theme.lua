@@ -125,7 +125,7 @@ local treesitter = {
 	TSLabel = { fg = colors.pink },
 	TSMethod = { fg = colors.aqua },
 	TSNamespace = { fg = colors.pink },
-	TSNone = { fg = colors.pink },
+	TSNone = { fg = colors.white },
 	TSNumber = { fg = colors.purple },
 	TSOperator = { fg = colors.pink },
 	TSParameter = { fg = colors.white },
