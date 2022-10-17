@@ -8,6 +8,7 @@ local colors = {
 	lightgrey = "#575b61",
 	darkgrey = "#64645e",
 	warmgrey = "#75715E",
+	lightblue = "#80a0ff",
 
 	pink = "#F93C80",
 	green = "#84F57D",
