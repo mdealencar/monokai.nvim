@@ -2,7 +2,7 @@
 
 Inspired by [monokai pro](https://monokai.pro) and various other monokai-based themes.
 
-**Featuring**:
+**Features**:
 
 - Treesitter
 - Bright high-contrast colors
