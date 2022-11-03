@@ -148,6 +148,7 @@ local treesitter = {
 	{ "@text.reference", { fg = colors.pink } },
 	{ "@text.strong", { bold = true } },
 	{ "@text.emphasis", { fg = colors.pink, italic = true } },
+	{ "@text.title", { fg = colors.pink, bold = true } },
 	{ "@underline", { fg = colors.pink, underline = true } },
 	{ "@strike", { fg = colors.pink, strikethrough = true } },
 	{ "@title", { fg = colors.pink } },
