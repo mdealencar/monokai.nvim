@@ -116,7 +116,7 @@ local treesitter = {
 	{ "@float", { fg = colors.purple } },
 	{ "@function", { fg = colors.aqua } },
 	{ "@function.builtin", { fg = colors.darkaqua, bold = true, italic = true } },
-	{ "@funcMacro", { fg = colors.darkaqua, bold = true, italic = true } },
+	{ "@function.macro", { fg = colors.darkaqua, bold = true, italic = true } },
 	{ "@include", { fg = colors.pink, bold = true } },
 	{ "@keyword", { fg = colors.pink, bold = true } },
 	{ "@keyword.function", { fg = colors.pink, bold = true } },
