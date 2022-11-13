@@ -106,7 +106,7 @@ local treesitter = {
 	{ "@character", { fg = colors.yellow } },
 	{ "@comment", { fg = colors.grey, italic = true } },
 	{ "@conditional", { fg = colors.pink, bold = true } },
-	{ "@constant", { fg = colors.green } },
+	{ "@constant", { fg = "#ab9df2" } },
 	{ "@const.builtin", { fg = colors.darkpurple, bold = true, italic = true } },
 	{ "@const.macro", { fg = colors.green } },
 	{ "@constructor", { fg = colors.green } },
