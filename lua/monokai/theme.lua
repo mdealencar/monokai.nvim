@@ -78,7 +78,7 @@ local general = {
 	{ "PreProc", { fg = colors.green } },
 	{ "Include", { fg = colors.pink, bold = true } },
 	{ "Define", { fg = colors.pink, bold = true } },
-	{ "Macro", { fg = colors.green } },
+	{ "Macro", { fg = colors.darkaqua, bold = true, italic = true } },
 	{ "PreCondit", { fg = colors.green } },
 
 	{ "Special", { fg = colors.purple } },
@@ -107,6 +107,7 @@ local treesitter = {
 	{ "@comment", { fg = colors.grey, italic = true } },
 	{ "@conditional", { fg = colors.pink, bold = true } },
 	{ "@constant", { fg = "#ab9df2" } },
+	{ "@constant.builtin", { fg = "#ab9df2", bold = true, italic = true } },
 	{ "@const.builtin", { fg = colors.darkpurple, bold = true, italic = true } },
 	{ "@const.macro", { fg = colors.green } },
 	{ "@constructor", { fg = colors.green } },
@@ -160,7 +161,7 @@ local treesitter = {
 	{ "@warning", { fg = colors.pink } },
 	{ "@danger", { fg = colors.pink } },
 	{ "@type", { fg = colors.pink } },
-	{ "@type.builtin", { fg = colors.darkpurple, bold = true, italic = true } },
+	{ "@type.builtin", { fg = colors.pink, bold = true } },
 	{ "@variable", { fg = colors.orange } },
 	{ "@variable.builtin", { fg = colors.darkaqua, bold = true, italic = true } },
 }
