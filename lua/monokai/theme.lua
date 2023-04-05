@@ -214,11 +214,14 @@ local neorg = {
 }
 
 local telescope = {
-	-- slightly brighter background to make the float pop more
-	{ "FloatBorder", { bg = "NONE", fg = "#5E81AC" } },
-	{ "NormalFloat", { bg = "NONE" } },
-	{ "TelescopeNormal", { bg = "NONE" } },
-	{ "TelescopeBorder", { bg = "NONE" } },
+	{ "FloatBorder", { fg = colors.base7 } },
+	{ "NormalFloat", { bg = colors.base1 } },
+	{ "TelescopeNormal", { fg = palette.base8, bg = palette.base0 } },
+	{ "TelescopeBorder", { fg = colors.base7 } },
+	{ "TelescopeSelection", { fg = colors.white, bold = true } },
+	{ "TelescopeSelectionCaret", { fg = colors.green } },
+	{ "TelescopeMultiSelection", { fg = colors.pink } },
+	{ "TelescopeMatching", { fg = colors.aqua } },
 }
 
 local function highlight(statement)
