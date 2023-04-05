@@ -101,7 +101,7 @@ local syntax = {
 	{ "Keyword", { fg = colors.pink, bold = true } },
 
 	{ "Todo", { fg = colors.deepOrange, bold = true, italic = true } },
-	{ "Comment", { fg = colors.grey, italic = true } },
+	{ "Comment", { fg = colors.warmgrey } },
 
 	-- @lsp.type.class         Structure
 	-- @lsp.type.decorator     Function
