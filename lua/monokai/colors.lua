@@ -9,7 +9,7 @@ local colors = {
 	base7 = '#B1B1B1',
 	base8 = '#e3e3e1',
 	border = '#A1B5B1',
-	
+
 	white = "#E8E8E3",
 	black = "#272822",
 	lightblack = "#2D2E27",
@@ -23,6 +23,8 @@ local colors = {
 
 	pink = "#F93C80",
 	green = "#84F57D",
+	darkgreen = "#61a324",
+	aquagreen = "#00C0A3",
 	aqua = "#66d9ef",
 	darkaqua = "#4EADE5",
 	yellow = "#E6DB74",
@@ -38,7 +40,6 @@ local colors = {
 	delbg = "#f75f5f",
 	changefg = "#d7d7ff",
 	changebg = "#5f5f87",
-	
 }
 
 return colors
