@@ -242,7 +242,7 @@ local neorg = {
 local telescope = {
 	FloatBorder = { fg = colors.base7 },
 	NormalFloat = { bg = colors.base1 },
-	TelescopeNormal = { fg = palette.base8, bg = palette.base0 },
+	TelescopeNormal = { fg = colors.base8, bg = colors.base0 },
 	TelescopeBorder = { fg = colors.base7 },
 	TelescopeSelection = { fg = colors.white, bold = true },
 	TelescopeSelectionCaret = { fg = colors.green },
