@@ -30,8 +30,7 @@ local editor = {
 
 	{ "SpecialKey", { fg = colors.pink } },
 	{ "Directory", { fg = colors.white } },
-	--
-	--
+
 	-- Diff
 	{ "DiffAdd", { fg = colors.addbg } },
 	{ "DiffDelete", { fg = colors.delbg } },
@@ -53,42 +52,72 @@ local editor = {
 	{ "FloatShadowThrough", { fg = colors.black, bg = "NONE" } },
 }
 
-local general = {
+local syntax = {
+	-- Constant
 	{ "Constant", { fg = colors.purple } },
-	{ "Number", { fg = colors.purple } },
-	{ "Float", { fg = colors.purple } },
-	{ "Boolean", { fg = colors.purple } },
-	{ "Character", { fg = colors.yellow } },
 	{ "String", { fg = colors.yellow } },
+	{ "Character", { fg = colors.yellow } },
+	{ "Number", { fg = colors.purple } },
+	{ "Boolean", { fg = colors.purple } },
+	{ "Float", { fg = colors.purple } },
 
-	{ "Type", { fg = colors.pink, bold = true } },
-	{ "Structure", { fg = colors.aqua } },
-	{ "StorageClass", { fg = colors.aqua } },
-	{ "Typedef", { fg = colors.aqua } },
+	-- Identifier
+	{ "Identifier", { fg = colors.orange } },
 	{ "Function", { fg = colors.aqua } },
 
-	{ "Identifier", { fg = colors.green } },
-
+	--  Statement
 	{ "Statement", { fg = colors.pink } },
-	{ "Operator", { fg = colors.pink } },
-	{ "Label", { fg = colors.pink } },
-
+	{ "Conditional", { fg = colors.pink, bold = true } },
+	{ "Repeat", { fg = colors.pink, bold = true } },
+	{ "Label", { fg = colors.pink, bold = true } },
+	{ "Operator", { fg = colors.pink, bold = true } },
 	{ "Keyword", { fg = colors.pink, bold = true } },
+	{ "Exception", { fg = colors.pink, bold = true } },
 
+	-- PreProc
 	{ "PreProc", { fg = colors.green } },
 	{ "Include", { fg = colors.pink, bold = true } },
 	{ "Define", { fg = colors.pink, bold = true } },
 	{ "Macro", { fg = colors.darkaqua, bold = true, italic = true } },
 	{ "PreCondit", { fg = colors.green } },
 
+	-- Type
+	{ "Type", { fg = colors.pink, bold = true } },
+	{ "StorageClass", { fg = colors.aqua } },
+	{ "Structure", { fg = colors.aqua } },
+	{ "Typedef", { fg = colors.aqua } },
+
+	-- Special
 	{ "Special", { fg = colors.purple } },
 	{ "SpecialChar", { fg = colors.pink } },
+	{ "Tag", { fg = colors.pink } },
 	{ "Delimiter", { fg = colors.white } },
 	{ "SpecialComment", { fg = colors.aqua } },
-	{ "Tag", { fg = colors.pink } },
+	{ "Debug", { fg = colors.pink } },
+
+	{ "Operator", { fg = colors.pink } },
+	{ "Label", { fg = colors.pink } },
+
+	{ "Keyword", { fg = colors.pink, bold = true } },
 
 	{ "Todo", { fg = colors.deepOrange, bold = true, italic = true } },
 	{ "Comment", { fg = colors.grey, italic = true } },
+
+	-- @lsp.type.class         Structure
+	-- @lsp.type.decorator     Function
+	-- @lsp.type.enum          Structure
+	-- @lsp.type.enumMember    Constant
+	-- @lsp.type.function      Function
+	-- @lsp.type.interface     Structure
+	-- @lsp.type.macro         Macro
+	-- @lsp.type.method        Function
+	-- @lsp.type.namespace     Structure
+	-- @lsp.type.parameter     Identifier
+	-- @lsp.type.property      Identifier
+	-- @lsp.type.struct        Structure
+	-- @lsp.type.type          Type
+	-- @lsp.type.typeParameter TypeDef
+	-- @lsp.type.variable      Identifier
 }
 
 local diagnostic = {
@@ -199,7 +228,7 @@ local function highlight(statement)
 end
 
 highlight(editor)
-highlight(general)
+highlight(syntax)
 highlight(diagnostic)
 highlight(treesitter)
 highlight(cmp)
