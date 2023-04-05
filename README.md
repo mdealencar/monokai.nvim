@@ -1,5 +1,7 @@
 # monokai.nvim
 
+Fork of [keyvchan/monokai.nvim](https://github.com/keyvchan/monokai.nvim).
+
 Inspired by [monokai pro](https://monokai.pro) and various other monokai-based themes.
 
 **Features**:
