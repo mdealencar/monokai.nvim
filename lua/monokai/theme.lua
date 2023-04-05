@@ -101,7 +101,7 @@ local syntax = {
 	{ "Keyword", { fg = colors.pink, bold = true } },
 
 	{ "Todo", { fg = colors.deepOrange, bold = true, italic = true } },
-	{ "Comment", { fg = colors.warmgrey, italic = false } },
+	{ "Comment", { fg = colors.warmgrey } },
 
 	-- @lsp.type.class         Structure
 	-- @lsp.type.decorator     Function
@@ -133,7 +133,7 @@ local treesitter = {
 	{ "@attribute", { fg = colors.green } },
 	{ "@boolean", { fg = colors.darkpurple, bold = true } },
 	{ "@character", { fg = colors.yellow } },
-	{ "@comment", { fg = colors.grey, italic = true } },
+	{ "@comment", { fg = colors.warmgrey } },
 	{ "@conditional", { fg = colors.pink, bold = true } },
 	{ "@constant", { fg = "#ab9df2" } },
 	{ "@constant.builtin", { fg = "#ab9df2", bold = true, italic = true } },
