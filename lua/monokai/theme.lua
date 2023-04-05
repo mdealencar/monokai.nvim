@@ -256,7 +256,7 @@ local function highlight(statements)
 	end
 end
 
-for group in {
+for _, group in pairs({
 	editor,
 	syntax,
 	diagnostic,
@@ -264,7 +264,7 @@ for group in {
 	cmp,
 	neorg,
 	telescope,
-	} do
+	}) do
 	highlight(group)
 end
 -- set_namespace(namespace)
