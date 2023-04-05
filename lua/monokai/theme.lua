@@ -23,7 +23,7 @@ local editor = {
 	{ "ErrorMsg", { fg = colors.red } },
 	{ "WarningMsg", { fg = colors.red } },
 	{ "VertSplit", { fg = colors.darkgrey } },
-	{ "LineNr", { fg = colors.yellow } },
+	{ "LineNr", { fg = colors.grey, bg = colors.warmgrey } },
 	{ "CursorLineNr", { fg = colors.yellow } },
 	{ "SignColumn", {} },
 	{ "NvimInternalError", { fg = colors.white } },
