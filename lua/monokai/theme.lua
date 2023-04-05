@@ -23,7 +23,7 @@ local editor = {
 	{ "ErrorMsg", { fg = colors.red } },
 	{ "WarningMsg", { fg = colors.red } },
 	{ "VertSplit", { fg = colors.darkgrey } },
-	{ "LineNr", { fg = colors.grey, bg = colors.warmgrey } },
+	{ "LineNr", { fg = colors.warmgrey, bg = colors.darkgrey } },
 	{ "CursorLineNr", { fg = colors.yellow } },
 	{ "SignColumn", {} },
 	{ "NvimInternalError", { fg = colors.white } },
@@ -101,7 +101,7 @@ local syntax = {
 	{ "Keyword", { fg = colors.pink, bold = true } },
 
 	{ "Todo", { fg = colors.deepOrange, bold = true, italic = true } },
-	{ "Comment", { fg = colors.warmgrey } },
+	{ "Comment", { fg = colors.warmgrey, italic = false } },
 
 	-- @lsp.type.class         Structure
 	-- @lsp.type.decorator     Function
