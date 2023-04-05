@@ -1,4 +1,15 @@
 local colors = {
+	base0 = '#222426',
+	base1 = '#211F22',
+	base2 = '#26292C',
+	base3 = '#2E323C',
+	base4 = '#333842',
+	base5 = '#4d5154',
+	base6 = '#72696A',
+	base7 = '#B1B1B1',
+	base8 = '#e3e3e1',
+	border = '#A1B5B1',
+	
 	white = "#E8E8E3",
 	black = "#272822",
 	lightblack = "#2D2E27",
@@ -27,6 +38,7 @@ local colors = {
 	delbg = "#f75f5f",
 	changefg = "#d7d7ff",
 	changebg = "#5f5f87",
+	
 }
 
 return colors
