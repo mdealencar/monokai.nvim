@@ -1,5 +1,5 @@
 local colors = {
-	white = "#FFFFFF",
+	white = "#E8E8E3",
 	black = "#272822",
 	lightblack = "#2D2E27",
 	lightblack2 = "#383a3e",
@@ -14,7 +14,7 @@ local colors = {
 	green = "#84F57D",
 	aqua = "#66d9ef",
 	darkaqua = "#4EADE5",
-	yellow = "#FFFF43",
+	yellow = "#E6DB74",
 	orange = "#FFBD37",
 	deepOrange = "#FF8C00",
 	purple = "#ae81ff",
